@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+
+<body onload="initSignUp()">
+    <div class="logo_ctn">
+        <img class="logo" src="../images/join_login_animation_logo.svg" alt="">
+    </div>
+
+    <div class="registration_page">
+        <div class="form_ctn">
+            <div id="back-to-login-page">
+                <a href="./login.html""><img src=" ../images/arrow-left-line.svg" alt=""></a>
+            </div>
+            <div class="registration_title">
+                <div>Sign up</div>
+                <img src="../images/vector.svg" alt="">
+            </div>
+
+            <form onsubmit="signUp(); return false">
+                <div class="column_align_centergit">
+                    <div class="sign_up_inputs">
+                        <div class="sign_up_input_div">
+                            <input onblur="checkExistingUser()" id="user-input" autocomplete="off" required
+                                minlength="3" type="text" placeholder="Name">
+                            <img src="../images/person.svg" alt="">
+                        </div>
+                        <div class="sign_up_input_div">
+                            <input onblur="checkExistingUser()" id="email-input" autocomplete="off" required
+                                type="email" placeholder="Email">
+                            <img src="../images/mail.svg" alt="">
+                        </div>
+                        <div class="sign_up_input_div">
+                            <input onblur="passwordValidation()" oninput="togglePasswordImg()" autocomplete="off"
+                                id="password-input" required type="password" placeholder="Password">
+                            <img id="password-lock" src="../images/lock.svg" alt="">
+                            <img onclick="toggleShowPassword()" id="password-visibility-on" class="d-none"
+                                src="../images/visibility.svg" alt="">
+                            <img onclick="toggleShowPassword()" id="password-visibility-off" class="d-none"
+                                src="../images/visibility_off.svg" alt="">
+                        </div>
+                        <div class="sign_up_input_div">
+                            <input onblur="passwordValidation()" id="password-confirmation" autocomplete="off" required
+                                type="password" placeholder="Confirm Password">
+                            <img src="../images/lock.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="privacy_policy_div">
+                        <div class="privacy_policy_check">
+                            <div>
+                                <img onclick="checkPrivatePolicyButton()" id="check-button"
+                                    src="../images/check_button.svg" alt="">
+                                <img onclick="checkPrivatePolicyButton()" id="checked-button" class="d-none"
+                                    src="../images/checked_button.svg" alt="">
+                            </div>
+                            <span> I accept the <a href="privacy_policy.html" target="_blank">Privacy policy</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onmouseover="activateButton()" onmouseleave="signUpValidation()" id="signUpButton"
+                        class="sign_up">Sign up</button>
+                </div>
+                <span id="input-error"></span>
+            </form>
+
+        </div>
+        <footer>
+            <div>
+                <a href="../HTML/privacy_policy.html" target="_blank">Privacy Policy</a>
+            </div>
+            <div>
+                <a href="../HTML/legal_notice.html" target="_blank">Legal Notice</a>
+            </div>
+        </footer>
+    </div>
+
+    <div id="sign-up-animation-div" class="login_signUp_animation_div d-none">
+        <div class="login_signUp_animation" id="sign-up-animation">You Signed Up successfully</div>
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/Authentication/register.js"></script>
+    <script src="../js/Authentication/login.js"></script>
+    <script src="../js/Authentication/sign_up.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

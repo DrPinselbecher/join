@@ -1,0 +1,21 @@
+.navLinkContain{
+    display: none;
+}
+
+.headerInfoContain{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    nav{
+        display: none !important;
+    }
+
+    .legal_content_section{
+        bottom: 0;
+    }
+
+    .legal_content_ctn{
+        height: calc(100vh - 80px);
+    }
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Notice</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/legal_content.css">
+    <link rel="stylesheet" href="../CSS/legal_content_from_login.css">
+</head>
+
+<body>
+    <header>
+        <p class="headerTitle">Kanban Project Management Tool</p>
+        <div>
+            <div class="headerInfoContain">
+                <img src="../images/help.svg">
+                <p id="log-out-menu" onclick="openProfilMenu()"></p>
+            </div>
+        </div>
+    </header>
+    <div id="profile_menu_contain" onclick="closeProfilMenu()" class="menuBgr d-none">
+        <div onclick="stop(event)" class="profileMenu">
+            <a onclick="renderLegalNoticePage()">Legal Notice</a>
+            <a onclick="renderPrivacyPolicyPage()">Privacy Policy</a>
+            <a onclick="logOut()">Log out</a>
+        </div>
+    </div>
+    <nav class="column">
+        <div id="join_logo" class="joinContain">
+            <a>
+                <img src="../images/join_logo.svg">
+            </a>
+        </div>
+        <div class="navLinkContain column">
+            <a id="summary" onclick="renderSummary()"><img src="../images/summary.svg"> Summary</a>
+            <a id="add_task" onclick="renderAddTask()"><img src="../images/add_task.svg"> Add Task</a>
+            <a id="board" onclick="renderBoard()"><img src="../images/board.svg"> Board</a>
+            <a id="contacts" onclick="renderContactsPage()"><img src="../images/contacts.svg"> Contacts</a>
+        </div>
+        <div class="privacyContain column">
+            <a href="./privacy_policy.html" class="privacyHoverEffect">Privacy Policy</a>
+            <a href="./legal_notice.html" class="privacyHoverEffect">Legal notice</a>
+        </div>
+    </nav>
+    <div class="legal_content_section">
+        <main class="legal_content_ctn">
+            <div class="legal_content_title">
+                <h1>Legal Notice</h1>
+                <a href="./login.html"><img src="../images/arrow-left-line.svg" alt=""></a>
+            </div>
+            <div>
+                <h2>Imprint</h2>
+                <div>
+                    <p>
+                    <ul>
+                        <li>René Porzelt</li>
+                        <li>Thiemannhof 21</li>
+                        <li>21147 Hamburg</li>
+                    </ul>
+                    </p>
+                    <h3>Exploring the Board</h3>
+                    <span>Email : rene.porzelt@gmail.com</span>
+                </div>
+            </div>
+            <div>
+                <h2>Acceptance of terms</h2>
+                <p>By accessing and using Join (Product), you acknowledge and agree to the following terms and
+                    conditions, and any policies, guidelines, or amendments thereto that may be presented to you from
+                    time to time. We, the listed students, may update or change the terms and conditions from time to
+                    time without notice.
+                </p>
+            </div>
+            <div>
+                <h2>Scope and ownership of the product</h2>
+                <p>Join has been developed as part of a student group project in a web development bootcamp at the
+                    Developer Akademie GmbH. It has an educational purpose and is not intended for extensive personal &
+                    business usage. As such, we cannot guarantee consistent availability, reliability, accuracy, or any
+                    other aspect of quality regarding this Product. The design of Join is owned by the Developer
+                    Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or replication of the
+                    design is strictly prohibited.
+                </p>
+            </div>
+            <div>
+                <h2>Proprietary rights</h2>
+                <p>Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all
+                    proprietary rights in Join, including any associated copyrighted material, trademarks, and other
+                    proprietary information.
+                </p>
+            </div>
+            <div>
+                <h2>Use of the product</h2>
+                <p>Join is intended to be used for lawful purposes only, in accordance with all applicable laws and
+                    regulations. Any use of Join for illegal activities, or to harass, harm, threaten, or intimidate
+                    another person, is strictly prohibited. You are solely responsible for your interactions with other
+                    users of Join.
+                </p>
+            </div>
+            <div>
+                <h2>Disclaimer of warranties and limitation of liability</h2>
+                <p>
+                    Join is provided "as is" without warranty of any kind, whether express or implied, including but not
+                    limited to the implied warranties of merchantability, fitness for a particular purpose, and
+                    non-infringement. In no event will we, the listed students, or the Developer Akademie, be liable for
+                    any direct, indirect, incidental, special, consequential or exemplary damages, including but not
+                    limited to, damages for loss of profits, goodwill, use, data, or other intangible losses, even if we
+                    have been advised of the possibility of such damages, arising out of or in connection with the use
+                    or performance of Join.
+                </p>
+            </div>
+            <div>
+                <h2>Indemnity</h2>
+                <p>You agree to indemnify, defend and hold harmless us, the listed students, the Developer Akademie, and
+                    our affiliates, partners, officers, directors, agents, and employees, from and against any claim,
+                    demand, loss, damage, cost, or liability (including reasonable legal fees) arising out of or
+                    relating to your use of Join and/or your breach of this Legal Notice. For any questions or notices,
+                    please contact us at "rene.porzelt@gmail.com".</p>
+                <span>Date: Date: Januar 16, 2024</span>
+            </div>
+        </main>
+    </div>
+
+    <div class="mobile">
+        <header>
+            <img id="join_logo_mobile" onclick="renderSummary()" src="../images/join_logo_mobile_version.svg">
+            <div>
+                <div class="headerInfoContain">
+                    <p id="mobile-log-out-menu" onclick="openProfilMenu()"></p>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

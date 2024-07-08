@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+
+<body onload="initLogin()">
+
+    <main>
+        <header class="sign_up_header">
+            <span class="call_to_action">Not a Join user?</span>
+            <a href="sign_up.html" id="sign-up" class="sign_up">Sign up</a>
+        </header>
+
+        <div class="login_form_ctn">
+            <div class="login_form">
+                <div class="login_title_div">
+                    <div class="login_title">Log in</div>
+                    <img src="../images/vector.svg" alt="">
+                </div>
+                <form onsubmit="login(); return false">
+                    <div class="login_input">
+                        <div class="login_inputs">
+                            <div class="login_input_div">
+                                <input id="user-login" required type="text" autocomplete="off"
+                                    placeholder="E-Mail / Username">
+                                <img src="../images/mail.svg" alt="email-img">
+                            </div>
+                            <div>
+                                <div class="login_input_div">
+                                    <input id="password-input" oninput="togglePasswordImg()" required autocomplete="off"
+                                        type="password" placeholder="Password">
+                                    <img id="password-lock" src="../images/lock.svg" alt="lock-img">
+                                    <img onclick="toggleShowPassword()" id="password-visibility-on" class="d-none"
+                                        src="../images/visibility.svg" alt="">
+                                    <img onclick="toggleShowPassword()" id="password-visibility-off" class="d-none"
+                                        src="../images/visibility_off.svg" alt="">
+                                </div>
+                                <div id="input-error"></div>
+                            </div>
+                        </div>
+                        <div class="login_parameters">
+                            <div class="remember_me">
+                                <div class="checking-button-div">
+                                    <img onclick="toggleRememberMeButton()" id="check-button"
+                                        src="../images/check_button.svg" alt="">
+                                    <img onclick="toggleRememberMeButton()" id="checked-button" class="d-none"
+                                        src="../images/checked_button.svg" alt="">
+                                </div>
+                                <span>Remember me</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login_buttons">
+                        <button type="submit" id="login-button">Log in</button>
+                        <button onclick="guestLogin(event)" type="submit" id="guest-login-button">Guest Log in</button>
+                    </div>
+                </form>
+            </div>
+
+            <footer>
+                <div>
+                    <a href="./privacy_policy.html">Privacy Policy</a>
+                </div>
+                <div>
+                    <a href="./legal_notice.html">Legal Notice</a>
+                </div>
+            </footer>
+    </main>
+
+    <div id="no-user-animation-div" class="login_signUp_animation_div d-none">
+        <div class="login_signUp_animation" id="no-user-animation">
+            You seems not to be a user yet, please sign-up to use our content!
+        </div>
+    </div>
+
+    <div id="animation-ctn">
+        <div class="logo_animation_ctn" id="logo-animation">
+            <img id="logo-animation-img" class="logo_animation_img" src="../images/join_login_animation_logo.svg"
+                alt="">
+        </div>
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/Authentication/register.js"></script>
+    <script src="../js/Authentication/login.js"></script>
+    <script src="../js/Authentication/sign_up.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

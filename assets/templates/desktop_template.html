@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desktop_template</title>
+</head>
+
+<body class="flex">
+    <header>
+        <p class="headerTitle">Kanban Project Management Tool</p>
+        <div>
+            <div class="headerInfoContain">
+                <img draggable="false" onclick="returnHelpHTML()" src="../images/help.svg">
+                <p id="log-out-menu" onclick="openProfilMenu()"></p>
+            </div>
+        </div>
+    </header>
+    <div id="profile_menu_contain" onclick="closeProfilMenu()" class="menuBgr d-none">
+        <div onclick="stop(event)" class="profileMenu">
+            <a onclick="renderLegalNoticePage()">Legal Notice</a>
+            <a onclick="renderPrivacyPolicyPage()">Privacy Policy</a>
+            <a onclick="logOut()">Log out</a>
+        </div>
+    </div>
+    <nav class="column">
+        <div id="join_logo" class="joinContain" onclick="renderSummary()">
+            <a>
+                <img draggable="false" src="../images/join_logo.svg">
+            </a>
+        </div>
+        <div class="navLinkContain column">
+            <a id="summary" onclick="renderSummary()"><img draggable="false" src="../images/summary.svg"> Summary</a>
+            <a id="add_task" onclick="renderAddTask()"><img draggable="false" src="../images/add_task.svg"> Add Task</a>
+            <a id="board" onclick="renderBoard()"><img draggable="false" src="../images/board.svg"> Board</a>
+            <a id="contacts" onclick="renderContactsPage()"><img draggable="false" src="../images/contacts.svg">
+                Contacts</a>
+        </div>
+        <div class="privacyContain column">
+            <a onclick="renderPrivacyPolicyPage()" class="privacyHoverEffect">Privacy Policy</a>
+            <a onclick="renderLegalNoticePage()" class="privacyHoverEffect">Legal notice</a>
+        </div>
+    </nav>
+</body>
+
+</html>

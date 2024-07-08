@@ -1,0 +1,518 @@
+* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    width: 0;
+}
+
+body,
+html {
+    position: relative;
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    user-select: none;
+    display: flex;
+    background-color: #f6f7f8;
+    overflow: hidden;
+    width: 100%;
+    max-height: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 232px;
+    right: 0;
+    background-color: white;
+    height: 96px;
+    z-index: 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+.headerTitle {
+    text-wrap: nowrap;
+    font-size: 20px;
+    margin-left: 160px;
+}
+
+.headerInfoContain {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-right: 40px;
+}
+
+.headerInfoContain p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 56px;
+    border-radius: 559px;
+    border: 3px solid #2A3647;
+    font-size: 20px;
+    color: #29ABE2;
+    font-weight: bolder;
+}
+
+.headerInfoContain img {
+    width: 20px;
+    height: 20px;
+    scale: 1;
+}
+
+.headerInfoContain img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.headerInfoContain p:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+nav {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 232px;
+    background-color: rgba(42, 54, 71, 1);
+    gap: 120px;
+    padding: 64px 0 64px 0;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.navLinkContain a {
+    display: flex;
+    align-items: center;
+    color: rgba(205, 205, 205, 1);
+    height: 46px;
+    padding-left: 56px;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.navLinkContain img {
+    width: 30px;
+    height: 30px;
+}
+
+.navLinkContain {
+    line-height: 19.2px;
+    width: 100%;
+    gap: 10px;
+}
+
+.profileMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 60px;
+    right: 80px;
+    background-color: #2A3647;
+    height: 158px;
+    width: 150px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #091931;
+    border-radius: 20px 0px 20px 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.profileMenu a {
+    text-decoration: none;
+    margin: 0;
+    padding: 10px;
+    color: #CDCDCD;
+}
+
+.profileMenu a:hover {
+    background-color: rgba(48, 70, 100, 0.5);
+    cursor: pointer;
+    scale: 0.98;
+}
+
+.menuBgr {
+    position: absolute;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999999999;
+}
+
+.privacyContain {
+    overflow: hidden;
+    justify-content: flex-end;
+    height: 317px;
+    width: 100%;
+}
+
+.privacyContain a {
+    color: rgba(168, 168, 168, 1);
+    padding: 8px 0 8px 56px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.privacyHoverEffect:hover {
+    color: rgb(0, 174, 255);
+    font-size: 16.2px;
+    line-height: 19.7px;
+}
+
+.joinContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.currentTemplate {
+    background-color: rgba(9, 25, 49, 1) !important;
+    color: rgba(255, 255, 255, 1) !important;
+    cursor: default !important;
+}
+
+.currentPrivacy {
+    background-color: rgba(9, 25, 49, 1) !important;
+    color: rgba(168, 168, 168, 1) !important;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.content_section {
+    position: fixed;
+    top: 96px;
+    right: 0;
+    bottom: 0;
+    left: 232px;
+}
+
+.closeWindowImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 24px;
+    width: 24px;
+}
+
+#guestLoginPopup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: darkgray;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 99999999999999;
+    display: none;
+    text-align: center;
+    width: max-content;
+    max-width: 90%;
+}
+
+.creatorDiv {
+    display: flex;
+    align-items: center;
+}
+
+.creatorTooltip {
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+.creatorTooltip:hover {
+    cursor: pointer;
+}
+
+.curserWait {
+    cursor: wait;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.creatorDiv svg {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.fadeOutGuestLoginPopup {
+    animation: fadeOutGuestLoginPopup 2.5s ease-in-out;
+}
+
+@keyframes fadeOutGuestLoginPopup {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.landscape-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 999999999;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .closeWindowImage:hover {
+        background-color: #D1D1D1;
+        cursor: pointer;
+    }
+
+    .navLinkContain a:hover {
+        background-color: rgba(48, 70, 100, 0.5);
+        cursor: pointer;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(150%);
+    }
+}
+
+@keyframes fadeOutBackground {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInBackground {
+    animation: fadeInBackground 0.100s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.fadeOutBackground {
+    animation: fadeOutBackground 0.100s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slideInFromRight {
+    animation: slideInFromRight 0.100s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.slideOutToRight {
+    animation: slideOutToRight 0.100s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.background {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.p-none {
+    pointer-events: none;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width:999px) {
+
+    .content_section {
+        top: 80px;
+        left: 0;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    body,
+    html {
+        height: 100vh;
+    }
+
+    nav {
+        position: absolute;
+        z-index: 999;
+        height: 80px;
+        width: 100%;
+        bottom: 0;
+        padding: 0;
+    }
+
+    header {
+        position: absolute;
+        left: 0;
+        height: 80px;
+    }
+
+    header img {
+        margin: 0 0 0 24px;
+    }
+
+    .navLinkContain a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        color: rgba(205, 205, 205, 1);
+        height: 46px;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        gap: 3px;
+        font-size: 14px;
+        background-color: transparent;
+    }
+
+    .navLinkContain img {
+        width: 28px;
+        height: auto;
+    }
+
+    .navLinkContain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 19.2px;
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .navLinkContiain a:hover {
+        background-color: rgba(48, 70, 100, 0.5);
+        cursor: pointer;
+    }
+
+    .headerInfoContain p {
+        margin: 0;
+        font-size: 16px;
+        height: 48px;
+        width: 48px;
+    }
+
+    .headerInfoContain {
+        margin: 0 24px 0 0;
+    }
+
+    .profileMenu {
+        top: 50px;
+        right: 60px;
+    }
+
+    .profileMenu a {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .profileMenu a:hover {
+        background-color: rgba(48, 70, 100, 0.5);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/legal_content.css">
+    <link rel="stylesheet" href="../CSS/legal_content_from_login.css">
+</head>
+
+<body>
+    <header>
+        <p class="headerTitle">Kanban Project Management Tool</p>
+        <div>
+            <div class="headerInfoContain">
+                <img src="../images/help.svg">
+                <p id="log-out-menu" onclick="openProfilMenu()"></p>
+            </div>
+        </div>
+    </header>
+    <div id="profile_menu_contain" onclick="closeProfilMenu()" class="menuBgr d-none">
+        <div onclick="stop(event)" class="profileMenu">
+            <a onclick="renderLegalNoticePage()">Legal Notice</a>
+            <a onclick="renderPrivacyPolicyPage()">Privacy Policy</a>
+            <a onclick="logOut()">Log out</a>
+        </div>
+    </div>
+    <nav class="column">
+        <div id="join_logo" class="joinContain">
+            <a>
+                <img src="../images/join_logo.svg">
+            </a>
+        </div>
+        <div class="navLinkContain column">
+            <a id="summary" onclick="renderSummary()"><img src="../images/summary.svg"> Summary</a>
+            <a id="add_task" onclick="renderAddTask()"><img src="../images/add_task.svg"> Add Task</a>
+            <a id="board" onclick="renderBoard()"><img src="../images/board.svg"> Board</a>
+            <a id="contacts" onclick="renderContactsPage()"><img src="../images/contacts.svg"> Contacts</a>
+        </div>
+        <div class="privacyContain column">
+            <a href="./privacy_policy.html" class="privacyHoverEffect">Privacy Policy</a>
+            <a href="./legal_notice.html" class="privacyHoverEffect">Legal notice</a>
+        </div>
+    </nav>
+    <div class="legal_content_section">
+        <main class="legal_content_ctn">
+            <div class="legal_content_title">
+                <h1>Help</h1>
+                <a href="./index.html"><img src="../images/arrow-left-line.svg" alt=""></a>
+            </div>
+            <p style="margin-top:-20px">Welcome to the help page for <span style="color: #29ABE2;">Join</span>, your
+                guide to using our kanban project
+                management tool. Here, we'll
+                provide an overview of what <span style="color: #29ABE2;">Join</span> is, how it can benefit you, and
+                how to use it.</p>
+            <div>
+                <h2>What is Join?</h2>
+                <p><span style="color: #29ABE2;">Join</span> is a kanban-based project management tool designed and
+                    built by a group of dedicated students as
+                    part of their web development bootcamp at the Developer Akademie.<br><br>
+
+                    Kanban, a Japanese term meaning "billboard", is a highly effective method to visualize work, limit
+                    work-in-progress, and maximize efficiency (or flow). <span style="color: #29ABE2;">Join</span>
+                    leverages the principles of kanban to help
+                    users manage their tasks and projects in an intuitive, visual interface.<br><br>
+
+                    It is important to note that <span style="color: #29ABE2;">Join</span> is designed as an educational
+                    exercise and is not intended for
+                    extensive business usage. While we strive to ensure the best possible user experience, we cannot
+                    guarantee consistent availability, reliability, accuracy, or other aspects of quality regarding
+                    <span style="color: #29ABE2;">Join</span>.<br>
+                </p>
+            </div>
+            <section>
+                <h2>How to use it</h2>
+                <p style="margin-top: -14px;">Here is a step-by-step guide on how to use <span
+                        style="color: #29ABE2;">Join</span>:</p>
+                <div>
+                    <div style="display: flex; gap: 15px;">
+                        <h2>1.</h2>
+                        <div>
+                            <h2>Relevant Legal Bases</h2>
+                            <p style="margin: 0;">When you log in to <span style="color: #29ABE2;">Join</span>, you'll
+                                find a default board. This board
+                                represents your project
+                                and contains four default lists: "To Do", "In Progress", “Await feedback” and "Done".
+                            </p><br>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <h2>2.</h2>
+                        <div>
+                            <h2>Creating Contacts</h2>
+                            <p style="margin: 0;">n <span style="color: #29ABE2;">Join</span>, you can add contacts to
+                                collaborate on your projects. Go to
+                                the "Contacts" section, click on "New contact", and fill in the required information.
+                                Once added, these contacts can be assigned tasks and they can interact with the tasks on
+                                the board.</p><br>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <h2>3.</h2>
+                        <div>
+                            <h2>Adding Cards</h2>
+                            <p style="margin: 0;">Now that you've added your contacts, you can start adding cards. Cards
+                                represent individual tasks. Click the "+" button under the appropriate list to create a
+                                new card. Fill in the task details in the card, like task name, description, due date,
+                                assignees, etc.</p><br>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <h2>4.</h2>
+                        <div>
+                            <h2>Moving Cards</h2>
+                            <p style="margin: 0;">
+                                As the task moves from one stage to another, you can reflect that on the board by
+                                dragging and dropping the card from one list to another.</p><br>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 15px;">
+                        <h2>4.</h2>
+                        <div>
+                            <h2>Deleting Cards</h2>
+                            <p style="margin: 0;">
+                                Once a task is completed, you can either move it to the "Done" list or delete it.
+                                Deleting a card will permanently remove it from the board. Please exercise caution when
+                                deleting cards, as this action is irreversible.<br><br>
+                                Remember that using <span style="color: #29ABE2;">Join</span> effectively requires
+                                consistent updates from you and your team
+                                to ensure the board reflects the current state of your project.<br><br>
+                                Have more questions about <span style="color: #29ABE2;">Join</span>? Feel free to
+                                contact us at [Your Contact Email]. We're
+                                here to help you!<br><br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <h2 style="margin-bottom: 40px;">Enjoy using Join!</h2>
+        </main>
+    </div>
+
+    <div class="mobile">
+        <header>
+            <img id="join_logo_mobile" onclick="renderSummary()" src="../images/join_logo_mobile_version.svg">
+            <div>
+                <div class="headerInfoContain">
+                    <p id="mobile-log-out-menu" onclick="openProfilMenu()"></p>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/summary.css">
+    <link rel="stylesheet" href="./CSS/addtask_style.css">
+    <link rel="stylesheet" href="./CSS/board.css">
+    <link rel="stylesheet" href="./CSS/contacts.css">
+    <link rel="stylesheet" href="./CSS/taskCategorys.css">
+    <link rel="stylesheet" href="./CSS/legal_content.css">
+
+    <script src="./js/storage.js" defer></script>
+    <script src="./js/Authentication/login.js" defer></script>
+    <script src="./js/Authentication/sign_up.js" defer></script>
+    <script src="./script.js" defer></script>
+    <script src="./js/summary.js" defer></script>
+    <script src="./js/includeHTML.js" defer></script>
+    <script src="./js/returnHTML/returnSummaryHTML.js" defer></script>
+    <script src="./js/returnHTML/returnTasksHTML.js" defer></script>
+    <script src="./js/returnHTML/returnBoardHTML.js" defer></script>
+    <script src="./js/returnHTML/returnContactsHTML.js" defer></script>
+    <script src="./js/returnHTML/returnLegalContent.js"></script>
+    <script src="./js/returnHTML/returnHelpHTML.js"></script>
+    <script src="./js/board/board.js" defer></script>
+    <script src="./js/board/createTask.js" defer></script>
+    <script src="./js/board/loadTasks.js" defer></script>
+    <script src="./js/board/checkWidthInBoard.js" defer></script>
+    <script src="./js/board/animations.js" defer></script>
+    <script src="./js/board/dragAndDrop.js" defer></script>
+    <script src="./js/board/editTask.js" defer></script>
+    <script src="./js/board/addTaskPopup.js" defer></script>
+    <script src="./js/contacts/contacts.js" defer></script>
+    <script src="./js/contacts/createContact.js" defer></script>
+    <script src="./js/contacts/loadContacts.js" defer></script>
+    <script src="./js/taskCreateSite/addTask.js" defer></script>
+    <script src="./js/taskCreateSite/contactManagement.js" defer></script>
+</head>
+
+<body onload="init()">
+    <div w3-include-html="../assets/templates/desktop_template.html"></div>
+    <div w3-include-html="../assets/templates/mobile_template.html"></div>
+    <div id="content"></div>
+    <div id="popup-ctn" onclick="closePopupContact()" class="popup_ctn d-none"></div>
+    <div id="popup-addTask-ctn" onclick="closePopupAddTask()" class="popup_ctn_addtask d-none"></div>
+    <div id="taskDetailsContain" onclick="closeTask()" class="taskDetailsContain d-none"></div>
+    <div id="legal-content-section" class="legal_content_section d-none"></div>
+    <div id="mobile-greeting-ctn" class="mobile_greeting_ctn d-none"></div>
+    <div id="guestLoginPopup" class="d-none" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);">
+        Kindly log in to your account to proceed with this action
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+</body>
+
+</html>
+<!--
+     (\(\ 
+    (=':')  (MEOW)
+    ( (")(")
+-->

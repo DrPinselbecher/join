@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile_template</title>
+</head>
+
+<body class="flex">
+    <div class="mobile">
+        <header>
+            <img id="join_logo_mobile" draggable="false" onclick="renderSummary()"
+                src="../images/join_logo_mobile_version.svg">
+            <div>
+                <div class="headerInfoContain">
+                    <p id="mobile-log-out-menu" onclick="openProfilMenu()"></p>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="navLinkContain">
+                <a id="summary_mobile" onclick="renderSummary()">Summary<img draggable="false"
+                        src="../images/summary.svg"></a>
+                <a id="board_mobile" onclick="renderBoard()">Board<img draggable="false" src="../images/board.svg"></a>
+                <a id="add_task_mobile" onclick="renderAddTask()">Add Tasks<img draggable="false"
+                        src="../images/add_task.svg"></a>
+                <a id="contacts_mobile" onclick="renderContactsPage()">Contacts<img draggable="false"
+                        src="../images/contacts.svg"></a>
+            </div>
+        </nav>
+    </div>
+</body>
+
+</html>

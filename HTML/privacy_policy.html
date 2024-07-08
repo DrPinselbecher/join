@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../CSS/fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../CSS/legal_content.css">
+    <link rel="stylesheet" href="../CSS/legal_content_from_login.css">
+</head>
+
+<body>
+    <header>
+        <p class="headerTitle">Kanban Project Management Tool</p>
+        <div>
+            <div class="headerInfoContain">
+                <img src="../images/help.svg">
+                <p id="log-out-menu" onclick="openProfilMenu()"></p>
+            </div>
+        </div>
+    </header>
+    <div id="profile_menu_contain" onclick="closeProfilMenu()" class="menuBgr d-none">
+        <div onclick="stop(event)" class="profileMenu">
+            <a onclick="renderLegalNoticePage()">Legal Notice</a>
+            <a onclick="renderPrivacyPolicyPage()">Privacy Policy</a>
+            <a onclick="logOut()">Log out</a>
+        </div>
+    </div>
+    <nav class="column">
+        <div id="join_logo" class="joinContain">
+            <a>
+                <img src="../images/join_logo.svg">
+            </a>
+        </div>
+        <div class="navLinkContain column">
+            <a id="summary" onclick="renderSummary()"><img src="../images/summary.svg"> Summary</a>
+            <a id="add_task" onclick="renderAddTask()"><img src="../images/add_task.svg"> Add Task</a>
+            <a id="board" onclick="renderBoard()"><img src="../images/board.svg"> Board</a>
+            <a id="contacts" onclick="renderContactsPage()"><img src="../images/contacts.svg"> Contacts</a>
+        </div>
+        <div class="privacyContain column">
+            <a href="./privacy_policy.html" class="privacyHoverEffect">Privacy Policy</a>
+            <a href="./legal_notice.html" class="privacyHoverEffect">Legal notice</a>
+        </div>
+    </nav>
+    <div class="legal_content_section">
+        <main class="legal_content_ctn">
+            <div class="legal_content_title">
+                <h1>Privacy Policy</h1>
+                <a href="./login.html"><img src="../images/arrow-left-line.svg" alt=""></a>
+            </div>
+            <div>
+                <h2>Preamble</h2>
+                <p>With the following privacy policy, we want to inform you about the types of your personal data
+                    (hereinafter also referred to as "data") that we process,
+                    for what purposes, and to what extent. The privacy policy applies to all processing of personal data
+                    carried out by us, both in the context of providing our services and especially on our websites,
+                    in mobile applications, and within external online presences, such as our social media profiles
+                    (hereinafter collectively referred to as the "Online Offering").<br>
+                    <br>
+                    The terms used are not gender-specific.<br>
+                    <br>
+                    As of: November 17, 2023
+                </p>
+            </div>
+            <section>
+                <h2>Table of Contents</h2>
+                <div>
+                    <h2>Relevant Legal Bases</h2>
+                    <p>
+                        Relevant legal bases under the GDPR: Below you will find an overview of the legal bases of the
+                        GDPR on which we process personal data. Please note that in addition to the provisions of the
+                        GDPR,
+                        national data protection regulations may apply in your or our country of residence or domicile.
+                        Furthermore, if more specific legal bases are relevant in individual cases, we will inform you
+                        of these in the privacy policy.
+                    <ul>
+                        <li>Consent (Art. 6(1)(a) GDPR) - The data subject has given consent to the processing of his or
+                            her personal data for one or more specific purposes.</li>
+                        <li>Performance of a Contract and Pre-contractual Inquiries (Art. 6(1)(b) GDPR) - Processing is
+                            necessary for the performance of a contract to which the data subject is a party or for the
+                            implementation of pre-contractual measures taken at the data subject's request.</li>
+                        <li>Legitimate Interests (Art. 6(1)(f) GDPR) - Processing is necessary for the purposes of the
+                            legitimate interests pursued by the controller or by a third party, except where such
+                            interests are overridden by the interests or fundamental rights and freedoms of the data
+                            subject which require protection of personal data.</li>
+                    </ul>
+                    National data protection regulations in Germany: In addition to the data protection regulations of
+                    the GDPR, national regulations on data protection apply in Germany. This includes, in particular,
+                    the Federal Data Protection Act (Bundesdatenschutzgesetz - BDSG).
+                    The BDSG contains specific provisions, in particular, on the right to access, the right to erasure,
+                    the right to object, the processing of special categories of personal data, the processing for other
+                    purposes, and the transmission and automated individual decision-making, including profiling. In
+                    addition, state data protection laws of the individual federal states may apply.
+                    </p>
+                </div>
+                <div>
+                    <h2>Transmission of Personal Data</h2>
+                    <span>All data are stored on our own server and will not be transferred to other servers</span>
+                </div>
+                <div>
+                    <h2>International Data Transfers</h2>
+                    <span>All data are stored on our own server and will not be transferred to other servers</span>
+                </div>
+                <div>
+                    <h2>Deletion of Data</h2>
+                    <span>All data can be deleted directly by the user. Data will be deleted permanently.</span>
+                </div>
+                <div>
+                    <h2>Use of Cookies</h2>
+                    <span>We do not use cookies.</span>
+                </div>
+                <div>
+                    <h2>Amendment and Update of the Privacy Policy</h2>
+                    <p>We kindly ask you to regularly inform yourself about the content of our privacy policy.
+                        We adjust the privacy policy as changes in the data processing carried out by us require this.
+                        We will inform you as soon as the changes require your cooperation (e.g., consent) or other
+                        individual notification.</p>
+                </div>
+                <section>
+        </main>
+    </div>
+
+    <div class="mobile">
+        <header>
+            <img id="join_logo_mobile" onclick="renderSummary()" src="../images/join_logo_mobile_version.svg">
+            <div>
+                <div class="headerInfoContain">
+                    <p id="mobile-log-out-menu" onclick="openProfilMenu()"></p>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div id="landscape-warning" class="landscape-warning">
+        Please rotate your device to Portrait mode.
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
